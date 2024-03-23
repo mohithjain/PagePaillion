@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <ul>
+                
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="romance.html">FEATURES</a></li>
+                <li><a href="article.html">ARTICLE</a></li>
+                <li><a href="blogs.html">BLOGS</a></li>
+                <li>
+                    <a href="">GENRES<i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="fantasy.html">Fantasy</a></li>
+                        <li><a href="fiction.html">Fiction</a></li>
+                        <li><a href="poetry.html">Poetry</a></li>
+                        <li><a href="romance.html">Romance Novels</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">ABOUT</a></li>
+                
+            </ul>
+        </div>
+      </header>
+    
+    <h1><u>Shopping Cart</u></h1>
+    <div class="cart-items">
+        <!-- Cart items will be displayed here -->
+    </div>
+
+    
+    <div class="cart-actions">
+        <button onclick="deleteCart()" class="action-btn">Clear Cart</button>
+        <button onclick="buyNow()" class="action-btn">Buy Now</button>
+    </div>
+        
+
+    
+ 
+    <script src="cart.js"></script>
+</body>
+
+</html>

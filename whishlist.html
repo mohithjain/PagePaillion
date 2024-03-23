@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="wishlist.css">
+    <script>
+        window.addEventListener('load', function() {
+  adjustContainerWidth();
+});
+
+function adjustContainerWidth() {
+  const container = document.querySelector('.wishlist-container');
+  const items = document.querySelectorAll('.wishlist-item');
+  let totalWidth = 0;
+
+  items.forEach(item => {
+    totalWidth += item.offsetWidth;
+  });
+
+  container.style.width = totalWidth + 'px';
+}
+
+    </script>
+</head>
+
+<body>
+
+  <header>
+    <div>
+        <ul>
+            
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="romance.html">FEATURES</a></li>
+          <li><a href="article.html">ARTICLE</a></li>
+          <li><a href="blogs.html">BLOGS</a></li>
+          <li>
+              <a href="">GENRES<i class="fas fa-caret-down"></i></a>
+              <ul class="dropdown">
+                  <li><a href="fantasy.html">Fantasy</a></li>
+                  <li><a href="fiction.html">Fiction</a></li>
+                  <li><a href="poetry.html">Poetry</a></li>
+                  <li><a href="romance.html">Romance Novels</a></li>
+              </ul>
+          </li>
+          <li><a href="about.html">ABOUT</a></li>
+            
+        </ul>
+    </div>
+  </header>
+
+  <section>
+    <h1><u>MY WISHLIST!!!</u></h1>
+  </section>
+  <section class="wish">
+    <div id="wishlist" class="wishlist-container"></div>
+    <script src="wishlist.js"></script>
+  </section>
+</body>
+</html>

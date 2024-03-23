@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Barlow Semi Condensed',Sans-serif;
+  text-decoration: none;
+
+}
+body{
+    background-color:  #f0efce;
+  }
+  :root{
+     
+      --main-color:	#FF4500 ;
+      --sec-color: #4946fd;
+      --text-color: #171427;
+      --bg-color: #89cff0
+      ;
+  }
+  ::selection{
+      color: var(--text-color);
+      background-color: var(--main-color);
+  }
+  
+  /*head1*/
+  section{
+    margin: 60px;
+  }
+  h1{
+    color: black;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    
+  }
+  ul{
+   
+    list-style: none;
+    background: #f0efce;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 2.1rem;
+    padding: 1.1rem;
+    text-align: center;
+  
+  }
+  ul li{
+    
+    display: inline-block;
+    position: relative;
+  }
+  
+  ul li a{
+    text-align: center;
+    display: block;
+    padding: 20px 25px;
+    color: black;
+    text-decoration: none;
+  
+    font-size: 20px;
+  }
+  ul li ul.dropdown li{
+    display: block;
+  }
+  ul li ul.dropdown{
+    width: 100%;
+    background: rgb(238, 233, 169);
+    position: absolute;
+    z-index: 999;
+    display: none;
+  }
+  ul li a:hover{
+    background: darkkhaki;
+  }
+  ul li:hover ul.dropdown{
+    display: block;
+  
+  }
+/* Styles for the cart item container */
+.cart-container {
+    width: 90vw; /* Set container width to 90% of viewport width */
+    max-width: 300px; /* Maximum width for the container */
+    height: auto; /* Auto height */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds container height */
+    margin: 20px auto; /* Center the container horizontally */
+  }
+  
+  .cart-item {
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Include padding in item size */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    padding: 10px;
+  }
+  
+  .cart-item img {
+    width: 50px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add margin to separate image from details */
+  }
+  
+  .item-details {
+    flex: 1; /* Allow details to grow and fill remaining space */
+  }
+
+  
+  
+  
+  .item-details h3, 
+  .item-details p {
+    margin: 0; /* Remove default margin */
+  }
+  
+  .item-actions {
+    display: flex; /* Use flexbox to align buttons horizontally */
+    justify-content: center; /* Center-align the buttons */
+    gap: 10px; /* Add some gap between the buttons */
+}
+
+.item-actions button {
+    padding: 10px 20px; /* Add padding to the buttons */
+    background-color: orange; /* Orange background color */
+    color: white; /* White text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 14px; /* Adjust font size */
+}
+
+.item-actions button:hover {
+    background-color: darkorange; /* Darker orange on hover */
+}
+
+  .cart-actions {
+    text-align: center; /* Center-align the buttons */
+    margin-top: 80px; /* Add some top margin */
+}
+
+.action-btn {
+    padding: 15px 30px; /* Add padding to make buttons bigger */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 18px; /* Increase font size */
+    margin: 0 10px; /* Add margin between buttons */
+}
+
+.action-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

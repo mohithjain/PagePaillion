@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Barlow Semi Condensed',Sans-serif;
+  text-decoration: none;
+
+}
+body{
+  background-color: #f0efce
+}
+:root{
+   
+    --main-color:	#FF4500 ;
+    --sec-color: #4946fd;
+    --text-color: #171427;
+    --bg-color: #89cff0
+    ;
+}
+::selection{
+    color: var(--text-color);
+    background-color: var(--main-color);
+}
+
+/*head1*/
+section{
+  margin: 60px;
+}
+h1{
+  color: black;
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  
+}
+ul{
+ 
+
+  list-style: none;
+  background: #f0efce;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 2.1rem;
+  padding: 1.1rem;
+  text-align: center;
+}
+ul li{
+  
+  display: inline-block;
+  position: relative;
+}
+
+ul li a{
+  text-align: center;
+  display: block;
+  padding: 20px 25px;
+  color: black;
+  text-decoration: none;
+
+  font-size: 20px;
+}
+ul li ul.dropdown li{
+  display: block;
+}
+ul li ul.dropdown{
+  width: 100%;
+  background: #f0efce;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+ul li a:hover{
+  background: #FF4500;
+}
+ul li:hover ul.dropdown{
+  display: block;
+
+}
+/* Styles for wishlist item container */
+.wishlist-container {
+  max-width: 100%; /* Set maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr)); /* Automatically adjust columns based on item size */
+  gap: 50px; /* Gap between items */
+}
+
+.wishlist-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box; /* Include padding in item size */
+}
+
+.wishlist-item img {
+  max-width: 100%; /* Ensure images don't exceed their container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+.wishlist-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Adjust styles as needed for image, title, author, price, and delete button */
+.wishlist-item img {
+  width: auto;
+  height: 300px;
+}
+
+.wishlist-item h2,
+.wishlist-item p {
+  margin: 10px 0;
+}
+
+.delete-btn {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* Style for the Buy Now button */
+#buy-now-btn {
+  display: block;
+  margin: 100px auto; /* Center the button horizontally */
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+#buy-now-btn:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+/* Media queries for adjusting layout based on device width */
+@media only screen and (max-width: 768px) {
+  .wishlist-container {
+    grid-template-columns: repeat(3, minmax(100px, 1fr)); /* Adjust columns for smaller screens */
+    gap: 20px; /* Reduce gap between items */
+  }
+
+  .wishlist-item {
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .wishlist-container {
+    grid-template-columns: repeat(2, minmax(80px, 1fr)); /* Adjust columns for even smaller screens */
+    gap: 10px; /* Further reduce gap between items */
+  }
+
+  .wishlist-item {
+    padding: 3px; /* Further adjust padding for smaller screens */
+  }
+}
